@@ -1,0 +1,29 @@
+{
+  "name": "stu",
+  "plural": "stu",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "regno": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "studetails": {
+      "type": "belongsTo",
+      "model": "studetails",
+      "foreignKey": "id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "studetails",
+  "plural": "studetails",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "marks": {
+      "type": "number",
+      "required": true
+    },
+    "rank": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
